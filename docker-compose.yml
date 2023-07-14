@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  gas:
+    build: .
+    tty: true
+    volumes:
+      - .:/workspace
+      - ./.clasprc.json:/root/.clasprc.json
+    working_dir: /workspace
